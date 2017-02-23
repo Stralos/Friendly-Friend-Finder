@@ -1,7 +1,7 @@
 'use strict';
 
 var path = require('path');
-var webpack = require('webpack');
+//var webpack = require('webpack');
 
 var config = {
   devtool: 'eval-source-map',
@@ -19,7 +19,7 @@ var config = {
       },
       {
         test: /\.less$/,
-        loaders: ['style-loader', 'css-loader?modules&localIdentName=[local]---[hash:base64:5]', 'less-loader']
+        loaders: ['style-loader', 'css-loader?sourceMap&modules&localIdentName=[local]---[hash:base64:5]', 'less-loader?sourceMap']
       }
     ]
   }
