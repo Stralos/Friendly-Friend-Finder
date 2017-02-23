@@ -19,7 +19,7 @@ var config = {
       },
       {
         test: /\.less$/,
-        loader: 'style-loader!css-loader!less-loader'
+        loaders: ['style-loader', 'css-loader?modules&localIdentName=[local]---[hash:base64:5]', 'less-loader']
       }
     ]
   }
