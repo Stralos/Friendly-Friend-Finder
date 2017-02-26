@@ -1,18 +1,29 @@
-.test{
-    color: red;
+body{
+    min-height: 100%;
+    width: 100%;
+    display: inline-block;
+    margin:0;
+	display: inline-block;
+   // background-color: #000;
+    position: relative;
+    background: url("../img/background.gif");
+	&:after{
+    	background-repeat: no-repeat;
+    	background-size:cover;
+    	background-attachment: fixed;
+
+    	content: "";
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;
+    	position: absolute;
+    	z-index: -1;   
+    	box-sizing:border-box;
+		opacity: 0.6;
+	}
 }
 
 html{
     height: 100%;
-}
-
-body{
-    min-height: 100%;
-    margin: 0;
-    display: inline-block;
-    background-color: pink;
-}
-
-.header{
-    color: yellow;
 }
