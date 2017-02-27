@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import css from '../../style/main.less';
+import css from "../../style/main.less";
 
 class Galery extends React.Component {
   render () {
@@ -8,8 +8,8 @@ class Galery extends React.Component {
         <div>
             <h1 className={css.test}>Galery</h1>
         </div>
-    )
+    );
   }
 }
 
-export default Galery
+export default Galery;
