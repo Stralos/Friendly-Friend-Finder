@@ -1,5 +1,8 @@
 import React from "react";
+import Hobbies from "../hobbies/hobbies.jsx";
+
 import css from "./style.less";
+
 
 class AboutMe extends React.Component {
   render (){
@@ -29,6 +32,7 @@ class AboutMe extends React.Component {
               </div>
             </div>
             
+            <Hobbies/>
         </div>
       </section>
     );
