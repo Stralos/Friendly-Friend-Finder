@@ -10,8 +10,20 @@ class Hobbie extends React.Component {
   render () {
     return (
       <section className={css.section}>
-        <h2>My Hobbie</h2>
-		<div>{this.props.name}</div>
+        <div className={css.logo}></div>
+        
+        <div>
+          
+          <h2 className={css.header}>
+            {this.props.name}
+          </h2>
+
+          <div>
+            {this.props.name}
+          </div>
+
+        </div>
+        
       </section>
     );
   }
