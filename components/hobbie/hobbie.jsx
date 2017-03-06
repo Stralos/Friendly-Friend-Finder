@@ -12,14 +12,14 @@ class Hobbie extends React.Component {
       <section className={css.section}>
         <div className={css.logo}></div>
         
-        <div>
+        <div className={css.content}>
           
           <h2 className={css.header}>
             {this.props.name}
           </h2>
 
           <div>
-            {this.props.name}
+            {this.props.description}
           </div>
 
         </div>
