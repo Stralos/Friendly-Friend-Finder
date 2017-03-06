@@ -29,4 +29,10 @@ class Hobbie extends React.Component {
   }
 }
 
+Hobbie.propTypes = {
+  name: React.PropTypes.string.isRequired,
+  description: React.PropTypes.string,
+  logo: React.PropTypes.string.isRequired
+};
+
 export default Hobbie;
