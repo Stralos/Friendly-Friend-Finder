@@ -8,7 +8,6 @@ class Main extends React.Component {
   render () {
     return (
         <div>
-            <h1 className={css.header}>Test</h1>
             <AboutMe/>
             <Galery/>
         </div>

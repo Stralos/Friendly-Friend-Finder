@@ -5,7 +5,7 @@ class Galery extends React.Component {
   render () {
     return (
       <section className={css.section}>
-        under construction
+
       </section>
     );
   }
