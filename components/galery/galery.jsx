@@ -1,13 +1,12 @@
 import React from "react";
-
-import css from "../../style/main.less";
+import css from "./style.less";
 
 class Galery extends React.Component {
   render () {
     return (
-        <div>
-            <h1 className={css.test}>Galery</h1>
-        </div>
+      <section className={css.section}>
+        under construction
+      </section>
     );
   }
 }
