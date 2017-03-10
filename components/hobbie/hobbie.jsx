@@ -8,9 +8,10 @@ class Hobbie extends React.Component {
   }
   
   render () {
+    let logoClasses = [css.logo, css[this.props.logo]].join(" ");
     return (
       <section className={css.section}>
-        <div className={css.logo}></div>
+        <div className={logoClasses}></div>
         
         <div className={css.content}>
           
