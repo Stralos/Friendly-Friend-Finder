@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
     return (
       <section className={css.section}>
         <div className={css.box}>
-            <h1 className={css.test}>Who is Behind All This</h1>
+            <h1 className={css.header}>Who is Behind All This</h1>
 
             <div className={css.container}>
               <div>
@@ -27,7 +27,7 @@ class AboutMe extends React.Component {
                 </p>
               </div>
             
-              <div>
+              <div className={css.imageContainer}>
                 <img src="../img/profile.jpg" height="426" width="283"/>
               </div>
             </div>

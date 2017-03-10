@@ -1,7 +1,8 @@
+@import "./variables.less";
 
 .box{
 	padding: 50px;
-	background: rgba(30,30,31,0.85);
+	background: @blackTransparent;
 	max-width: 1400px;
 }
 
@@ -12,4 +13,12 @@
 .container-center{
 	.container();
 	justify-content: center;
+}
+
+
+@media (max-width: @tablet-view) {
+	.box{
+		padding: 25px;
+		max-width: 690px;
+	}
 }

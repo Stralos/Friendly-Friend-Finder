@@ -1,6 +1,8 @@
 @import "../../style/icons.less";
 
 
+@import "../../style/variables.less";
+
 .section{
 	width: 33.3333%;
 	display: flex;
@@ -18,4 +20,17 @@
 	padding-left: 20px;
 	padding-bottom: 20px;
 	flex: 1;
+}
+
+
+@media (max-width: @tablet-view) {
+  .section{
+	width: 50%;
+  }
+}
+
+@media (max-width: @mobile-view) {
+  .section{
+	width: 100%;
+  }
 }

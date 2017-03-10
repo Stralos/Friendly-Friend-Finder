@@ -1,13 +1,25 @@
 @import "../../style/shared.less";
+@import "../../style/variables.less";
 
 .section{
 	.container-center();
-	padding-top: 50px;
-	padding-bottom: 150px;
-	//display: flex;
-//	justify-content: center;
+	padding: 50px 20px 150px 20px;
+}
+
+.header{
+	margin-top: 0px;
 }
 
 .quote{
 	font-style: italic;
+}
+
+@media (max-width: @tablet-view) {
+  .container{
+	flex-direction: column-reverse;
+  }
+  .imageContainer{
+	display:flex;
+	justify-content: center;	
+  }
 }
