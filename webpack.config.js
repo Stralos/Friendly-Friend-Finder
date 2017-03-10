@@ -22,7 +22,7 @@ var config = {
         loaders: ["style-loader", "css-loader?sourceMap&modules&localIdentName=[local]---[hash:base64:5]", "less-loader?sourceMap"]
       },
       { 
-        test: /\.(jpg|gif|png|svg)$/, 
+        test: /\.(woff|woff2|jpg|gif|png|svg)$/, 
         loader: `url-loader?limit=${65536}&mimetype=image/[ext]&name=[path][name].[ext]`
       }
     ]
