@@ -1,5 +1,5 @@
 @import "../../style/shared.less";
-
+@import "../../style/icons.less";
 
 .section{
 	.container();
@@ -12,4 +12,44 @@
 	.container();
 	.section();
 	flex: 1;
+	h1{
+		transition: all 1s;
+		opacity: 0;
+		transform: translate(0, 20px);
+	}
+}
+
+.quote{
+	font-style: italic;
+}
+
+.header{
+	opacity: 1 !important;
+	transform: translate(0, 0) !important;
+}
+
+.arrowButton{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.5s;
+	animation-name: buttonUpAndDown;
+    animation-duration: 4s;
+	&:hover{
+		opacity: 1;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+
+.arrowContainer{
+	padding-bottom: 20px;
+}
+
+@keyframes buttonUpAndDown {
+	0% {transform: translate(0,0);}
+    50% {transform: translate(20,0);}
+	100% {transform: translate(0,0);}
 }
